@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;600&display=swap');
+
+.menu {
+  font-family: 'Roboto';
+  color: purple;
+  position: fixed;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  top: 60px;
+  left: 0;
+  transform: translateX(-114%);
+  transition: all 0.2s;
+  z-index: 50;
+  overflow-y: scroll;
+  &-blur {
+    width: 100%;
+    height: 100%;
+    left: 14%;
+    backdrop-filter: blur(5px);
+    position: absolute;       
+}
+  &-items {
+      background-color: white;
+      width: 14%;
+      border-radius: 5px;
+  }
+  &-list {
+    margin: 0;
+  }
+  &-item {
+      width: 100%;
+      height: 50px;
+      text-align: center;
+      padding: 5px 0;
+      border-top: 1px solid grey;
+
+      &-link {
+          color: grey;
+          text-decoration: none;
+          font-size: 20px;
+          font-weight: 300;
+          padding-right: 5px;
+      }
+
+      &-link:hover {
+          color: purple;
+      }
+  }
+
+
+  &-list {
+      list-style-type: none;
+      display: flex;
+      padding: 0 5px;
+      flex-direction: column;
+      align-items: center;
+      font-size: 25px;
+  }
+  &-btn {
+    width: 100%;
+    background-color: purple;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 5px;
+  }
+  &-btn:hover {
+    background-color: white;
+    color: purple;
+    border: 1px solid purple;
+  }
+}
+
+
+.menu.open {
+  transform: translateX(0);
+}

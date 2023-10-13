@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;600&display=swap');
+
+.username {
+  display: flex;
+  justify-content: space-around;
+  width: 14%;
+  height: 56px;
+  align-items: center;
+  font-family: 'Roboto';
+  z-index: 1000;
+  background-color: white;
+  &-fio {
+      padding: 5px 15px;
+      background-color: purple;
+      color: white;
+  }
+  &-text {
+    color: purple;
+  }
+}
+
